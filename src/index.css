@@ -1,0 +1,213 @@
+/* =============================== google font part start ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Inter:wght@100..900&family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Inter:wght@100..900&family=Jersey+25+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&display=swap');
+/* =============================== google font part end ============================= */
+/* ==============================  common css part start ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ol,ul {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --nunito: "Nunito Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+.container{
+  width: 1400px;
+  margin: 0 auto;
+}
+/* ==============================  common css part end ============================= */
+/* ==============================  main menu part start ============================= */
+#main_menu {
+ margin-top: 57px;
+}
+.navBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar img {
+  width: 92px;
+  height: 114px;
+  margin-left: 124px;
+}
+.navBar ul {
+  display: flex;
+  gap: 50px;
+  margin-left: 270px;
+}
+.navBar ul li a {
+  font-family: var(--nunito);
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+}
+.navBar ul li a:hover {
+  color: #EF8D21;
+}
+.navBar ul li a::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #EF8D21;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: scaleX(0);
+  transition: all linear .3s;
+}
+.navBar ul li a:hover::after {
+  margin-top: 4px;
+  transform: scaleX(1);
+} 
+.navButton {
+  display: flex;
+  gap: 28px;
+  margin-left: 282px;
+}
+.navButton a {
+  padding: 12px 17px;
+  font-family: var(--nunito);
+  font-weight: 600;
+  font-size: 16px;
+  background:transparent;
+  color: #000;
+  border-radius: 100px;
+  transition: all linear .4s;
+}
+.navButton a:hover {
+  font-weight: bold;
+  background: #EF8D21;
+  color: #fff;
+}
+/* ==============================  main menu part end ============================= */
+/* ==============================  banner part start ============================= */
+#banner, .container {
+  display: flex;
+  justify-content: space-between;
+}
+.banner_left_content {
+  position: relative;
+}
+.banner_left_content h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  color:#364547;
+  margin-top: 128px;
+  margin-left: 145px;
+}
+.banner_left_content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color:#364547;
+  margin-left: 145px;
+  line-height: 62px;
+  margin-bottom: 41px;
+}
+.banner_left_content h1 span {
+  color:#EF8D21;
+}
+.banner_left_content p {
+  width: 551px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #364547;
+  word-spacing: 3px;
+  line-height: 25px;
+  margin-left: 157px;
+}
+.circle {
+  position: absolute;
+  top: 256px;
+  left: 42px;
+}
+.counter {
+  width: 607px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 32px 14px 44px;
+  background: #fff;
+  box-shadow: 3px 10px 11px -6px rgba(0,0,0,0.75);
+  border: 1px solid #EDEDED;
+  border-radius: 60px;
+  margin-left: 143px;
+  margin-top: 27px;
+}
+.counter h5{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #8F8F8F;
+}
+.line {
+  width: 33px;
+  height: 1px;
+  background:#9E9E9E;
+  transform: rotate(90deg);
+}
+.counter a {
+  width: 134px;
+  height: 46px;
+  font-family:"Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 46px;
+  margin-left: 22px;
+}
+.counter a:active{
+  box-shadow: 0px 5px 4px 0px rgba(239,141,33,1);
+}
+.leaf{
+  width: 243px;
+  height: 313px;
+  position: absolute;
+  top: 515px;
+  left: 0;
+  z-index: -1;
+}
+/* ==============================  banner part end ============================= */
+.banner_right_content{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 55px;
+}
+.banner_right_content img {
+  width: 612px;
+  height: 681px;
+}
+.banner_right_content h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #364547;
+  position: absolute;
+  top: 0;
+  right: 89px;
+}
+.banner_right_content h3 span {
+  display: block;
+  font-size: 20px;
+  font-size: 55px;
+  color: #EF8D21;
+}
